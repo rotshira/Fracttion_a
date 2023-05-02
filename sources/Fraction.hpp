@@ -20,6 +20,7 @@ namespace ariel
         Fraction(int numerator_, int denominator_);
         //float to fraction
         Fraction(float N); 
+        Fraction();
 
         //set
         // void setNumerator(int numnumerator_);
@@ -82,7 +83,7 @@ namespace ariel
         friend std::ostream& operator<<(std::ostream& os, const Fraction& fr);
         
         // >>
-        friend std::ostream& operator>>(std::ostream& os, const Fraction& fr);
+        friend std::istream& operator>>(std::istream& is, const Fraction& fr);
 
     };
 }

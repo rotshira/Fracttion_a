@@ -12,10 +12,11 @@ namespace ariel
 //constructor
 Fraction::Fraction(int numerator_, int denominator_)
 {
-    if (denominator_!= 0) {
+    if (denominator_!= 0) 
+    {
     this->numerator = numerator_;
     this->denominator = denominator_;
-     this->reduce();
+    this->reduce();
     }
 }
 
@@ -23,6 +24,12 @@ Fraction::Fraction(float N)
 {
 
 }
+
+Fraction::Fraction()
+    {
+        this->numerator = 0;
+        this->denominator = 1;
+    }
 
 //set
 // void Fraction::setNumerator(int numerator_)
@@ -32,10 +39,10 @@ Fraction::Fraction(float N)
 
 // void Fraction::setDenom(int denominator_)
 // {
-//     if(denominator_ == 0)
-//     {
-//         ;
-//     }
+//     // if(denominator_ == 0)
+//     // {
+//     //     ;
+//     // }
 //     this->denominator = denominator_;
 // }
 
